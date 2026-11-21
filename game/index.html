@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Block Dodger</title>
+<meta name="theme-color" content="#0d1017">
+<link rel="icon" href="data:,">
+<title>Shadow Gallery — a stealth game</title>
 <style>
-  html, body { margin: 0; height: 100%; overflow: hidden; background: #11141b; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0d1017; }
   #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
   /* Read aloud, never shown: the status line screen readers announce. */
   #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 </style>
 </head>
 <body>
-<canvas id="game" aria-label="Block Dodger: move the paddle left and right to dodge falling blocks and catch coins"></canvas>
+<canvas id="game" aria-label="Shadow Gallery: sneak through the museum, steal every artifact and reach the exit unseen"></canvas>
 <p id="status" role="status" aria-live="polite"></p>
-<script type="module" src="./src/main.js"></script>
+<script type="module" src="./src/boot.js"></script>
 </body>
 </html>
